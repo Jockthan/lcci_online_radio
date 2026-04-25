@@ -1,10 +1,10 @@
-
 "use client";
 
 import Link from "next/link";
 import { Radio, MessageSquare, Info, Calendar, Menu } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+import { ThemeToggle } from "@/components/ThemeToggle";
 
 const NAV_LINKS = [
   { name: "Home", href: "#", icon: Radio },
@@ -28,23 +28,30 @@ export function Navbar() {
         </Link>
 
         {/* Desktop Nav */}
-        <div className="hidden md:flex items-center gap-8">
-          {NAV_LINKS.map((link) => (
-            <Link
-              key={link.name}
-              href={link.href}
-              className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors"
-            >
-              {link.name}
-            </Link>
-          ))}
-          <Button variant="default" className="cyan-glow" asChild>
-            <Link href="#contact">Join LCCI</Link>
-          </Button>
+        <div className="hidden md:flex items-center gap-6">
+          <div className="flex items-center gap-8 mr-4">
+            {NAV_LINKS.map((link) => (
+              <Link
+                key={link.name}
+                href={link.href}
+                className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors"
+              >
+                {link.name}
+              </Link>
+            ))}
+          </div>
+          
+          <div className="flex items-center gap-4">
+            <ThemeToggle />
+            <Button variant="default" className="cyan-glow" asChild>
+              <Link href="#contact">Join LCCI</Link>
+            </Button>
+          </div>
         </div>
 
         {/* Mobile Nav */}
-        <div className="md:hidden">
+        <div className="md:hidden flex items-center gap-4">
+          <ThemeToggle />
           <Sheet>
             <SheetTrigger asChild>
               <Button variant="ghost" size="icon">
