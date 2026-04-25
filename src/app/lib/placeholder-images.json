@@ -1,0 +1,29 @@
+
+{
+  "placeholderImages": [
+    {
+      "id": "hero-radio",
+      "description": "Professional radio studio setup",
+      "imageUrl": "https://picsum.photos/seed/lcci-radio/1200/800",
+      "imageHint": "radio studio"
+    },
+    {
+      "id": "mission-outreach",
+      "description": "LCCI community outreach program",
+      "imageUrl": "https://picsum.photos/seed/lcci-outreach/800/600",
+      "imageHint": "community outreach"
+    },
+    {
+      "id": "youth-mentorship",
+      "description": "Mentorship session with youth",
+      "imageUrl": "https://picsum.photos/seed/lcci-youth/800/600",
+      "imageHint": "youth mentorship"
+    },
+    {
+      "id": "family-support",
+      "description": "Family counseling and support",
+      "imageUrl": "https://picsum.photos/seed/lcci-family/800/600",
+      "imageHint": "family counseling"
+    }
+  ]
+}
