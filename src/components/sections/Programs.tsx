@@ -9,28 +9,28 @@ import { Briefcase, HeartHandshake, GraduationCap, Mic2 } from "lucide-react";
 const PROGRAMS = [
   {
     title: "Community Outreach",
-    description: "Providing essential resources like food and shelter to underserved areas.",
+    description: "Supporting communities through outreach programs that provide care, resources, and hope.",
     icon: HeartHandshake,
     imgId: "mission-outreach",
     category: "Service"
   },
   {
     title: "Youth Mentorship",
-    description: "Guiding young leaders through academic success and personal growth.",
+    description: "Raising confident, purpose-driven young people through guidance and personal development.",
     icon: GraduationCap,
     imgId: "youth-mentorship",
     category: "Education"
   },
   {
     title: "Vocational Training",
-    description: "Skills-based workshops for sustainable livelihoods and careers.",
+    description: "Equipping individuals with practical skills for independence and sustainable living.",
     icon: Briefcase,
     imgId: "hero-radio",
     category: "Skills"
   },
   {
     title: "Media Broadcasts",
-    description: "Daily spiritual guidance and community talk shows.",
+    description: "Delivering impactful teachings, discussions, and inspiration through our radio platform.",
     icon: Mic2,
     imgId: "family-support",
     category: "Broadcast"
@@ -41,11 +41,11 @@ export function Programs() {
   return (
     <section id="programs" className="py-24 bg-background">
       <div className="container mx-auto px-4">
-        <div className="text-center max-w-3xl mx-auto mb-16 space-y-4">
+        <div className="text-center max-w-4xl mx-auto mb-16 space-y-4">
           <Badge variant="outline" className="text-primary border-primary/30 px-4 py-1">INITIATIVES</Badge>
-          <h2 className="text-3xl md:text-5xl font-bold tracking-tight">Transforming Lives, Together</h2>
-          <p className="text-muted-foreground text-lg font-medium">
-            Our multi-faceted programs are designed to uplift communities and individual spirits through practical and faith-based support.
+          <h2 className="text-3xl md:text-5xl font-bold tracking-tight">Helping Individuals Grow, Succeed, and Thrive</h2>
+          <p className="text-muted-foreground text-lg font-medium leading-relaxed">
+            Our strategy is to develop programs and initiatives that strengthen individuals, remove barriers, and build self-esteem—turning information into practical knowledge and life skills for lasting success.
           </p>
         </div>
 

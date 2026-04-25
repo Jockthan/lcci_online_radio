@@ -1,12 +1,12 @@
-
 "use client";
 
 import { useState } from "react";
-import { Mail, Phone, MapPin, Send } from "lucide-react";
+import { Mail, Phone, MapPin, Send, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/hooks/use-toast";
+import { Badge } from "@/components/ui/badge";
 
 export function Contact() {
   const { toast } = useToast();
@@ -31,29 +31,46 @@ export function Contact() {
       <div className="container mx-auto px-4">
         <div className="grid lg:grid-cols-2 gap-16">
           <div className="space-y-12">
-            <div className="space-y-6">
-              <h2 className="text-3xl md:text-5xl font-bold tracking-tight">Connect with Us</h2>
-              <p className="text-muted-foreground text-lg font-medium leading-relaxed max-w-lg">
-                Have questions about our programs or want to volunteer? Send us a message and we'll be in touch.
-              </p>
-            </div>
-
             <div className="space-y-8">
-              {[
-                { icon: Mail, label: "Email Us", value: "info@lcci.org" },
-                { icon: Phone, label: "Call Us", value: "+1 (555) 000-LCCI" },
-                { icon: MapPin, label: "Visit Us", value: "123 Grace Avenue, Community Center" },
-              ].map((item) => (
-                <div key={item.label} className="flex gap-6 items-center group">
-                  <div className="w-12 h-12 rounded-xl bg-secondary flex items-center justify-center border border-white/5 group-hover:border-primary/50 transition-colors">
-                    <item.icon className="h-5 w-5 text-primary" />
-                  </div>
-                  <div>
-                    <p className="text-xs font-mono text-muted-foreground uppercase tracking-widest">{item.label}</p>
-                    <p className="text-lg font-bold">{item.value}</p>
-                  </div>
+              <div className="space-y-6">
+                <Badge variant="outline" className="text-primary border-primary/30 px-4 py-1">GET INVOLVED</Badge>
+                <h2 className="text-3xl md:text-5xl font-bold tracking-tight">Join the Movement</h2>
+                <div className="space-y-4">
+                  <p className="text-foreground text-xl font-semibold leading-relaxed max-w-lg">
+                    LCCI is driven by a vision to impact lives and communities through meaningful initiatives.
+                  </p>
+                  <p className="text-muted-foreground text-lg font-medium leading-relaxed max-w-lg">
+                    Join us today and become part of a growing movement committed to empowering people and bringing hope to those in need.
+                  </p>
+                  <p className="text-primary font-bold text-lg flex items-center gap-2">
+                    <Sparkles className="h-5 w-5" />
+                    Partner with us as a Member, Friend, Sponsor, or Monthly Partner.
+                  </p>
                 </div>
-              ))}
+              </div>
+              
+              <div className="h-px bg-white/10 w-full" />
+
+              <div className="space-y-6">
+                <h3 className="text-2xl font-bold">Connect with Us</h3>
+                <div className="space-y-8">
+                  {[
+                    { icon: Mail, label: "Email Us", value: "info@lcci.org" },
+                    { icon: Phone, label: "Call Us", value: "+1 (555) 000-LCCI" },
+                    { icon: MapPin, label: "Visit Us", value: "123 Grace Avenue, Community Center" },
+                  ].map((item) => (
+                    <div key={item.label} className="flex gap-6 items-center group">
+                      <div className="w-12 h-12 rounded-xl bg-secondary flex items-center justify-center border border-white/5 group-hover:border-primary/50 transition-colors">
+                        <item.icon className="h-5 w-5 text-primary" />
+                      </div>
+                      <div>
+                        <p className="text-xs font-mono text-muted-foreground uppercase tracking-widest">{item.label}</p>
+                        <p className="text-lg font-bold">{item.value}</p>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
             </div>
           </div>
 

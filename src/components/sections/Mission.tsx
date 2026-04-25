@@ -7,17 +7,17 @@ import Image from "next/image";
 const VALUES = [
   {
     title: "Empowerment",
-    description: "Equipping individuals with tools for spiritual and practical success.",
+    description: "Equipping individuals with the knowledge, tools, and confidence to achieve success in all areas of life.",
     icon: ShieldCheck
   },
   {
     title: "Community",
-    description: "Building strong networks of support and shared growth.",
+    description: "Building a supportive network where individuals grow, connect, and uplift one another.",
     icon: Users
   },
   {
     title: "Compassion",
-    description: "Serving the underserved with unconditional care and love.",
+    description: "Reaching out with love and care to meet both spiritual and practical needs.",
     icon: Heart
   }
 ];
@@ -40,18 +40,23 @@ export function Mission() {
             />
             <div className="absolute bottom-6 left-6 right-6 p-6 bg-background/90 backdrop-blur-md rounded-xl border border-white/10 z-20">
               <p className="text-primary font-bold text-sm tracking-widest uppercase mb-2">Our Mission</p>
-              <p className="text-xl font-medium tracking-tight">
+              <p className="text-lg font-medium tracking-tight">
                 "To foster positive community change and spiritual growth through outreach and media broadcasts."
               </p>
             </div>
           </div>
 
           <div className="space-y-10">
-            <div className="space-y-4">
-              <h2 className="text-3xl md:text-5xl font-bold tracking-tight">Our Core Values</h2>
-              <p className="text-muted-foreground text-lg font-medium leading-relaxed max-w-xl">
-                We believe in a holistic approach to life transformation—addressing both spiritual depth and practical needs.
-              </p>
+            <div className="space-y-6">
+              <h2 className="text-3xl md:text-5xl font-bold tracking-tight">Our Values & Vision</h2>
+              <div className="space-y-4">
+                <p className="text-muted-foreground text-lg font-medium leading-relaxed max-w-xl">
+                  Our mission is to Engage, Enrich, and Empower individuals through the effective communication of relevant, life-changing information.
+                </p>
+                <p className="text-muted-foreground text-lg font-medium leading-relaxed max-w-xl">
+                  Through this platform, we bring illumination that inspires sound judgment, growth, and advancement in every area of life.
+                </p>
+              </div>
             </div>
 
             <div className="grid gap-6">
