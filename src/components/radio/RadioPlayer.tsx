@@ -1,4 +1,3 @@
-
 "use client";
 
 import { Badge } from "@/components/ui/badge";
@@ -31,7 +30,7 @@ export function RadioPlayer() {
               frameBorder="0" 
               scrolling="no"
               className="rounded-lg shadow-inner"
-              title="LCCI Live Radio Player"
+              title="Life Changers Radio Player"
             />
           </div>
         </div>

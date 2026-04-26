@@ -1,4 +1,3 @@
-
 import Link from "next/link";
 import { Radio, Facebook, Twitter, Instagram, Youtube } from "lucide-react";
 
@@ -13,7 +12,7 @@ export function Footer() {
                 <Radio className="text-primary-foreground h-5 w-5" />
               </div>
               <span className="font-headline font-bold text-2xl tracking-tighter">
-                LCCI<span className="text-primary">LIVE</span>
+                Life Changers <span className="text-primary">Radio</span>
               </span>
             </Link>
             <p className="text-muted-foreground text-lg font-medium leading-relaxed max-w-md">

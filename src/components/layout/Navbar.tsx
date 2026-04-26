@@ -23,7 +23,7 @@ export function Navbar() {
             <Radio className="text-primary-foreground h-5 w-5" />
           </div>
           <span className="font-headline font-bold text-xl tracking-tighter text-foreground">
-            LCCI<span className="text-primary">LIVE</span>
+            Life Changers <span className="text-primary">Radio</span>
           </span>
         </Link>
 
